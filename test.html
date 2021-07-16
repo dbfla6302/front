@@ -7,11 +7,28 @@
     <title>Git 테스트 페이지</title>
     <script>
         function abc(){
-            alert("test");
+            alert("테스트 메시지");
         }
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $("#btn").click(function(){
+               $("#box").stop().animate({
+                    "left":"500px"
+               },1000);
+            });
+        });
+    </script>
+    <style>
+        .box { width: 100px; height: 100px; background-color: red; 
+        position: absolute;
+        }
+    </style>
 </head>
 <body>
     <input type="button" value="클릭" onclick="abc();">
+    <input type="button" value="애니메이션" id="btn">
+    <div class="box" id="box"></div>
 </body>
 </html>
