@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<!-- <meta name="viewport" content="width= device-width, initial-scale=1.0"> -->
+<title>Vue 1일차 - Vue 엔진 및 기본 Basic 부분</title>
+<!-- Vue 엔진 
+http://cdn.jsdelivr.net/npm/vue > min.js
+맥은 Safari 3.X 이상 사용하셔야 Vue 정상 작동합니다.
+
+CDN설치 : url로 해당 코드를 로드하여 출력하는 형태
+CLI설치 : APP개발시 CLI로 제작 https://cli.vuejs.org/
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 이걸써야함-->
+<!-- Vue.js devtools => vue 에러 파일 알려줌 (이것도 깔아야함)
+    https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd/related -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> <!--보안때문에 안될수도 있어서 https에서 s 지워주기 그래도 작동됨-->
+</head>
+<body>
+<aside id="ccc" class="ccc">
+    <div id="abc">{{test}}</div>    <!-- {{ 가상의 변수값을 출력함 }} -->
+    <div id="bbb">{{test1}}</div>
+</aside>
+</body>
+<script>    //뷰는 주로 하단에 배치
+/*
+let bbb = function(){} == let a = new Vue({}); (new 꼭 써줘야함)
+bbb();
+*/
+let a = new Vue({   //Vue 실행 부분
+        el:".ccc",  //el : 해당 태그 id, class 엘리먼트의 약자 (객체)
+        data:{  //data : 인스턴스 (가상의 변수를 만들어서 출력하는 파트)
+            test:"Vue메세지 출력 연습",
+            test1:"메세지 추가2"
+        }
+    });
+
+    let b = new Vue({   //Vue 실행 부분
+        el:"#bbb",
+        data:{
+            test1:"확장 Vue2 입니다."
+        }
+    });
+</script>
+</html>
