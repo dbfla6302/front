@@ -23,7 +23,7 @@
 # [Project]
 - [x] HTML & CSS
 - [x] Javascript
-- [] Jquery
+- [ ] Jquery
 - [x] Vue.js
 - [x] SCSS
 - [x] Database
