@@ -1,10 +1,10 @@
 ![라이언](https://blog.kakaocdn.net/dn/0mySg/btqCUccOGVk/nQ68nZiNKoIEGNJkooELF1/img.jpg "master Project")
 
 ---
-|테스트1|<span style="color:blue">테스트2</span>|테스트3|
+|테스트1|테스트2|테스트3|
 |----|---|--|
 |1|2|3|
-|4|<span style="color:blue">5</span>|6|
+|4|5|6|
 
 ---
 #### Frount-end Maeng Yu Rim!
