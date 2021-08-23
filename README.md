@@ -21,9 +21,9 @@
 포트폴리오(http://dbfla6302.dothome.co.kr/portfolio/)
 ---
 # [Project]
-[x] HTML & CSS
-[x] Javascript
-[] Jquery
-[x] Vue.js
-[x] SCSS
-[x] Database
+- [x] HTML & CSS
+- [x] Javascript
+- [] Jquery
+- [x] Vue.js
+- [x] SCSS
+- [x] Database
