@@ -1,3 +1,6 @@
+[](https://blog.kakaocdn.net/dn/0mySg/btqCUccOGVk/nQ68nZiNKoIEGNJkooELF1/img.jpg)
+
+---
 #### Frount-end Maeng Yu Rim!
 * 프로젝트 1
 * 프로젝트 2
