@@ -15,7 +15,7 @@ let a = new Vue({
                 return false;
             }
             else {
-                location.href = 'http://lovertvtest.dothome.co.kr';
+                location.href = 'http://dbfla6302.dothome.co.kr';
             }
         }
     }
