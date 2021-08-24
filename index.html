@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
-<meta name="viewport" content="width= device-width, initial-scale=1.0">
-<title>Vue 1일차 - Vue 엔진 및 기본 Basic 부분</title>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테스트 프로젝트</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>    
+    <style>
+        .inputs { width:250px; height:30px;
+        border:1px solid #ccc; border-radius: 3px;
+        text-indent: 5px;
+        }
+        .btn { 
+            width: 100px; height: 30px;
+            background-color: black;
+            color: white;
+            border: 0;
+        }
+    </style>
 </head>
 <body>
-<section>
-<form method="POST" action="">
-    <input type="text" name="mid" class="inputs">
-    <input type="password" name="mpass" class="inputs">
-    <input type="submit" value="로그인" class="btn">
+<section id="vues">
+<form id="frm" name="frm" method="POST" enctype="application/x-www-form-urlencoded" @submit.prevent="gopage">
+<input type="text" name="mid" v-model="mid" class="inputs">
+<input type="password" name="mpass" v-model="mpass" class="inputs">
+<input type="submit" value="로그인" class="btn">
+</section>    
 </form>
-</section>
 </body>
-<script src="./js/index.js"></script>
+<script src="./js/index.js?v=2021082401"></script>
 </html>
